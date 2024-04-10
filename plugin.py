@@ -39,7 +39,7 @@ def apply_button_settings(deck_id: str, page_id: int, button_id: int, button_set
     INSTANCE.apply_button_settings(deck_id, page_id, button_id, button_settings)
 
 
-def button_pressed(deck_id: str, page_id: int, button_id: int, button_settings: Dict[str, str]) -> None:
+def button_pressed(button_settings: Dict[str, str]) -> None:
     entity = button_settings.get("entity")
     service = button_settings.get("service")
 
